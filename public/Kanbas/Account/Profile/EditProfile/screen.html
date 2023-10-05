@@ -1,84 +1,181 @@
-<table>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Accounts</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calender</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help!!!</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-        </td>
-        <td>
-<h1>Edit Profile</h1>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="d-block d-md-none wd-bg-color-black">
+            <div class="wd-flex-row-container">
+                <div class="wd-flex-col2">
+                    <form action="/Kanbas/KanbasNavigation/index.html" style="margin-block-end: 0px;">
+                        <button class="btn btn-dark">
+                    <i class="fa fa-bars fa-1x" style="color:white;margin: 10px;" aria-hidden="true "></i></button></form>
+                </div>
+                <div class="wd-flex-col1">
+                    <font color="white" style="margin: 10px;">
+                        CS4550.12631.202410
+                        </font>
+                </div>
+                <div class="wd-flex-col3">
+                    <form action="/Kanbas/Courses/CourseNavigation/index.html" style="margin-block-end: 0px;">
+                        <button class="btn btn-dark">
+                    <i class="fa fa-chevron-down" style="color: white; margin: 10px;" aria-hidden="true"></i></button></form>
+                </div>
+            </div>
+        </div>
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black d-none d-md-block">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <img src="/images/image.png" style="height: 50px;width: 60px;">
+                    </li>
+                    <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle" style="color: black" aria-hidden="true"></i>
+                        Account</a></li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        Courses</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        Calender</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-inbox" aria-hidden="true"></i><br>
+                        Inbox</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        History</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        Studio</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        Commons</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i> <br>
+                        Help</a></li>
+                </ul>
+            </div>
 
-Name: <input type="text" value="Hrishika Samani" />
-Pronouns:
-<select>
-    <option> He/Him</option>
-    <option> She/Her</option>
-    <option> They/Them</option>
-    <option> None</option>
-</select>
-<br><br>
+            <div class=" wd-flex-grow-1">
+                <div class="wd-flex-row-container">
+                    <div style="margin-left: 10px; margin-right: 20px; margin-top: 12px;"><i class="fa fa-bars fa-2x" style="color: red;" aria-hidden="true"></i></div>
+                    <div>
+                        <h5 style="margin-top: 15px; margin-bottom: 5px;">Hrishika Samani's Profile</h5></div>
+                </div>
+                <hr />
 
-Title: <input type="text"/>
-<br>
+                <div class="wd-flex-row-container">
 
-<h3>Contact</h3>
-No registered services, you can add some on the <a href="#">settings</a> page.
+                <div class="list-group wd-course-navigation d-none d-md-block">
+                    <a href="#" class="list-group-item list-group-item-action"> Notifications </a>
+                    <a href="/Kanbas/Account/Profile/screen.html" class="list-group-item list-group-item-action active" aria-current="true"> Profile </a>
+                    <a href="#" class="list-group-item list-group-item-action"> Files </a>
+                    <a href="#" class="list-group-item list-group-item-action"> Settings </a>
+                    <a href="#" class="list-group-item list-group-item-action">ePortfolios</a>
+                    <a href="#" class="list-group-item list-group-item-action"> Shared Content </a>
+                    <a href="#" class="list-group-item list-group-item-action"> The Hub </a>
+                    <a href="#" class="list-group-item list-group-item-action">Qwickly Course Tools </a>
+                    <a href="#" class="list-group-item list-group-item-action"> Global Announcements</a>
+                </div>
 
-<h3>Biography</h3>
-Student at Northeastern University.
-<br>
-<textarea cols="50" rows="5">Student at Northeastern University </textarea>
+                <div style="margin-left: 25px;margin-top: 10px;width: 400px;">
+                    <i class="fa fa-user-circle fa-5x" style="color: black" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <b>Name:*</b>
+                    <br>
+                    <input type="text" value="Hrishika Samani" />
+                    <br><br>
+                    <b>Pronouns:</b>
+                    <br>
+                    <select>
+                        <option> None</option>
+                        <option> He/Him</option>
+                        <option> She/Her</option>
+                        <option> They/Them</option>
+                    </select>
+                    <br><br>
+                    <b>Title:</b>
+                    <br>
+                    <input type="text"/>
+                    <br><br>
+                    <h4>Contact</h4>
+                     No registered services, you can add some on the <a href="#" style="
+                     text-decoration: none">
+                        <font color="red">settings
+                        </font></a> page.
+                    <br><br>
+                    <h4>Biography</h4>
+                    <textarea cols="50" rows="5">Softwar Developer, Full Stack Developer, Student at Northeastern University. </textarea>
+                    <br><br>
+                    <h4>Links</h4>
+                    <div class="wd-flex-row-container">
+                        <div style="
+                        margin-left: 50px;
+                        margin-right: 50px">
+                            Title
+                        </div>
+                        <div style="
+                        margin-left: 130px">
+                            URL
+                        </div>
+                    </div>
+                    <div class="wd-flex-row-container">
+                        <div style="
+                        margin-right: 4px">
+                         <input type="text" value="YouTube" />
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                        <div style="
+                        margin-left: 9px; margin-right: 5px">
+                        <th><input type="text" value="https://www.youtube.com/" />
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <i class="fa fa-times" style="color: red;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="wd-flex-row-container">
+                        <button type="button" class="btn" style="margin-top: 5px;">Add another Link</button>
+                    </div>
+                    <div class="wd-flex-row-container" style="border-bottom: 1px solid black;">
+                        <br>
+                    </div>
+                    <div class="wd-flex-row-container" style="padding-top: 5px;">
+                        <div style="
+                        margin-left: 200px">
+                            <form action="/Kanbas/Account/Profile/screen.html">
+                                <button class="btn">Cancel</button>
+                                </form>
+                        </div>
+                        <div style="
+                        margin-left: 5px">
+                            <form action="/Kanbas/Account/Profile/screen.html">
+                                <button class="btn btn-danger">Save Profile</button>
+                                </form>
+                        </div>
+                    </div>
 
-<h3>Links</h3>
-<ul>
-    <li><a href="https://www.youtube.com/">YouTube</a> Links to an external site.</li>
-</ul>
-<table width="50%">
-    <thead>
-        <tr>
-          <th>Title</th>
-          <th>URL</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <th> <input type="text" value="YouTube" /></th>
-            <th><input type="text" value="https://www.youtube.com/" /></th>
-            <th><a href="#">Remove</a></th>
-        </tr>
-      </tbody>
-</table>
-<button>Add another Link</button>
-<br>
-<button>Cancel</button>
-<button>Save Profile</button>
-<br>
-<button>Edit Profile</button>
-<form action="/Kanbas/Account/Profile/screen.html">
-<button>Cancel Editing</button>
-</form>
-
-</td>
-</tr>
-</table>
+                    </div>
+                    <div>
+                    <form action="/Kanbas/Account/Profile/screen.html">
+                        <button class="btn" style="margin-left: 10px">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            Cancel Editing
+                        </button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </div>    
+</body>
+</html>

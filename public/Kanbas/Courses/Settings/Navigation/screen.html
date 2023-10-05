@@ -1,147 +1,331 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Accounts</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calender</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help!</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopta Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>
-                      <form action="/Kanbas/Courses/Settings/CourseDetails/screen.html">
-                      <button>Course Details</button>
-                    </form>
-                    </td>
-                    <td>
-                      <form action="#">
-                      <button>Sections</button>
-                    </form>
-                    </td>
-                    <td>
-                      <form action="/Kanbas/Courses/Settings/Navigation/screen.html">
-                      <button>Navigation</button>
-                    </form>
-                    </td>
-                    <td>
-                    <form action="#">
-                    <button>Apps</button>
-                    </form>
-                    </td>
-                    <td>
-                    <form action="#">
-                    <button>Feature Options</button>
-                    </form>
-                    </td>
-                    <td>
-                    <form action="#">
-                    <button>Integrations</button>
-                    </form>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-            Drag and drop items to reorder them in the course registration.
-            <br>
-            <table border="1">
-                <tr>
-                    <td>Home</td>
-                </tr>
-                <tr>
-                    <td>Modules</td>
-                </tr>
-                <tr>
-                    <td>Piazza</td>
-                </tr>
-                <tr>
-                    <td>Zoom Meetings</td>
-                </tr>
-                <tr>
-                    <td>Assignments</td>
-                </tr>
-                <tr>
-                    <td>Quizzes</td>
-                </tr>
-                <tr>
-                    <td>Grades</td>
-                </tr>
-                <tr>
-                    <td>People</td>
-                </tr>
-                <tr>
-                    <td>Panopto Video</td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            Drag items here to hide them from students.
-            <br>
-            <table border="1">
-                <tr>
-                    <td>Chat<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>SCORM<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Attendance<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Digication<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Syllabus<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Credentials<br>
-                    <i>Page disabled,wont appear in navigation</i>
-                    </td>
-                </tr>
-            </table>
-            <br><br>
-            <button>Save</button>
-        </td>
-    </tr>
-</table>        
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="d-block d-md-none wd-bg-color-black">
+            <div class="wd-flex-row-container">
+                <div class="wd-flex-col2">
+                    <form action="/Kanbas/KanbasNavigation/index.html" style="margin-block-end: 0px;">
+                        <button class="btn btn-dark">
+                    <i class="fa fa-bars fa-1x" style="color:white;margin: 10px;" aria-hidden="true "></i></button></form>
+                </div>
+                <div class="wd-flex-col1">
+                    <font color="white" style="margin: 10px;">
+                        CS4550.12631.202410
+                        </font>
+                </div>
+                <div class="wd-flex-col3">
+                    <form action="/Kanbas/Courses/CourseNavigation/index.html" style="margin-block-end: 0px;">
+                        <button class="btn btn-dark">
+                    <i class="fa fa-chevron-down" style="color: white; margin: 10px;" aria-hidden="true"></i></button></form>
+                </div>
+            </div>
+        </div>
 
-        
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black d-none d-md-block">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <img src="/images/image.png" style="height: 50px;width: 60px;">
+                    </li>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle" style="color: white;" aria-hidden="true"></i>
+                        Account</a></li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        Courses</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        Calender</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-inbox" aria-hidden="true"></i><br>
+                        Inbox</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        History</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        Studio</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        Commons</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i> <br>
+                        Help</a></li>
+                </ul>
+            </div>
+            <div class=" wd-flex-grow-1">
+                <div class="wd-flex-row-container">
+                <div class="d-none d-md-block" style="margin-left: 10px; margin-right: 20px; margin-top: 12px;"><i class="fa fa-bars fa-2x" style="color: red;" aria-hidden="true"></i></div>
+                <div class="d-none d-md-block" style="margin-top: 15px; font-size: medium;">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb" style="margin-bottom: 0;">
+                          <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html" style="
+                            text-decoration: none;
+                            color: red;">CS4550.12631.202410</a></li>
+                          <li class="breadcrumb-item active" aria-current="page"><a href="/Kanbas/Courses/Settings/screen.html" style="text-decoration: none;color: red;">Settings</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Navigation</li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="d-none d-md-block wd-flex-grow-1" style="margin-top: 5px; margin-bottom: 5px;">
+                    <button class="btn" style="margin-right: 10px;float: right;margin-top: 8px;">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        Student View</button>
+                </div>
+                </div>
+                <hr class="d-none d-md-block" style="margin-left: 10px;"/>
+
+    <div class="wd-flex-row-container">
+
+            <div class="list-group wd-course-navigation d-none d-md-block">
+                <a href="/Kanbas/Courses/Home/screen.html" class="list-group-item list-group-item-action" aria-current="true">
+                Home
+            </a>
+            <a href="/Kanbas/Courses/Modules/screen.html" class="list-group-item list-group-item-action"> Modules </a>
+            <a href="#" class="list-group-item list-group-item-action"> Piazza </a>
+            <a href="#" class="list-group-item list-group-item-action"> Zoom Meetings </a>
+            <a href="/Kanbas/Courses/Assignments/screen.html" class="list-group-item list-group-item-action">Assignments</a>
+            <a href="#" class="list-group-item list-group-item-action"> Quizzes </a>
+            <a href="/Kanbas/Courses/Grades/screen.html" class="list-group-item list-group-item-action"> Grades </a>
+            <a href="#" class="list-group-item list-group-item-action"> People </a>
+            <a href="#" class="list-group-item list-group-item-action"> Panopta Videos </a>
+            <a href="#" class="list-group-item list-group-item-action"> Discussions </a>
+            <a href="#" class="list-group-item list-group-item-action"> Announcements </a>
+            <a href="#" class="list-group-item list-group-item-action"> Pages </a>
+            <a href="#" class="list-group-item list-group-item-action"> Files </a>
+            <a href="#" class="list-group-item list-group-item-action"> Rubrics </a>
+            <a href="#" class="list-group-item list-group-item-action"> Outcomes </a>
+            <a href="#" class="list-group-item list-group-item-action"> Collaborations </a>
+            <a href="#" class="list-group-item list-group-item-action"> Syllabus </a>
+            <a href="/Kanbas/Courses/Settings/screen.html" class="list-group-item list-group-item-action active"> Settings </a>
+            
+        </div>
+
+<div class="wd-flex-grow-1" style="padding-right: 20px;">
+    <ul class="nav nav-tabs" style="margin-bottom: 10px;">
+        <li class="nav-item">
+            <a class="nav-link" href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sections</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1">Apps</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1">Feature Options</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1">Integrations</a>
+        </li>
+     </ul>
+     <br>
+        Drag and drop items to reorder them in the course registration.
+        <br><br>
+        <div class="list-group" style="width:50%;margin-left: 5px;">
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Home</b></div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Modules</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Piazza</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Zoom Meetings</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Assignments</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Quizzes</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Grades</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>People</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Panopta Videos</b></div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        Drag items here to hide them from students.<br>
+        <a style="font-size: smaller;">Disabling most pages will cause students who visit those pages to be redirected.</a>
+        <br><br>
+        <div class="list-group" style="width:50%;margin-left: 5px; margin-bottom: 10px;">
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Chat</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>SCORM</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Attendance</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Barnes and Noble Bookstore</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Digication</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Top Hat</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Syllabus</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Microsoft Teams Meetings</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>Credentials</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item" style="display: flex;">
+                <div><b>iClicker</b><br>
+                    <a style="font-size: smaller;">
+                    Page disabled, won't appear in navigation</a>
+                </div>
+                <div class="wd-flex-grow-1">
+                    <div style="padding: 5px;float: right;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <form action="/Kanbas/Courses/Settings/CourseDetails/screen.html">
+    <button class="btn btn-danger" style="margin-bottom: 15px;">Save</button>
+</form>
+    </div>
+</div>
+    </body>
+</html>
