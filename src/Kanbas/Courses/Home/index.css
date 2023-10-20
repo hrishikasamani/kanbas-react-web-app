@@ -1,0 +1,68 @@
+.row {
+    width: max-content;
+}
+.wd-flex {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    overflow-x: scroll;
+    
+}
+
+.wd-flex .btn {
+    min-width: max-content;
+    margin-right: 5px;
+    background-color: rgba(211, 211, 211, 0.686);
+    border-radius: 1;
+    border-color: rgb(188, 188, 188);
+}
+
+.wd-flex .dropdown {
+    margin-right: 5px;
+}
+
+.wd-flex .btn:hover {
+    background-color: gray;
+}
+
+.btn .circle {
+    color: green;
+}
+
+.wd-flex .btn-danger {
+    background-color: crimson;
+    border-color: transparent;
+}
+.wd-flex .btn-danger:hover {
+    background-color: red;
+}
+
+.row .col-8 {
+    max-width: 600px;
+}
+
+.col-4 .btn {
+    text-align: left;
+    margin-bottom: 7px;
+    min-width: 250px;
+    background-color: rgba(211, 211, 211, 0.686);
+    border-radius: 1;
+    border-color: rgb(188, 188, 188);
+}
+
+.col-4 .btn:hover {
+    background-color: gray;
+}
+
+.row .col-4{
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+.wd-flex-row-container .head {
+    color: red;
+}
+
+.wd-flex-row-container p{
+    font-size: small;
+}

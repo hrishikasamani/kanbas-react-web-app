@@ -1,0 +1,56 @@
+.card-body .btn {
+    font-weight: 600;
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+.card-body .btn:hover {
+    text-decoration: underline solid blue;
+    color: blue;
+}
+
+.card-text{
+    text-decoration: none;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.card-desc{
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.wd-icon {
+    font-size: x-large;
+}
+
+.wd-dashboard {
+    margin-left: 110px;
+    margin-top: 10px;
+    width: 50vb;
+}
+
+.wd-courses {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card-img-top {
+    height: 200px;
+    width: 350px;
+}
+
+.card {
+    height: max-content;
+    width: max-content;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
