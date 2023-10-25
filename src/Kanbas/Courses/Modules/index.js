@@ -5,8 +5,6 @@ import {BiDotsVerticalRounded} from "react-icons/bi"
 import "./index.css"
 function Modules() {
   return (
-    // <div>
-
 <div className="wd-flex-row-container">
   <div className="wd-flex">
             <button class="btn"> Collapse all</button>
@@ -26,7 +24,6 @@ function Modules() {
         <hr />
         <ModuleList />
       </div>
-    // </div>
   );
 }
 export default Modules;

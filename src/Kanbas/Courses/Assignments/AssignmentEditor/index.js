@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
+import "./index.css";
 
 
 function AssignmentEditor() {
@@ -16,17 +17,20 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
-    <div>
-      <h2>Assignment Name</h2>
+    <div className="assignment">
+      <h5>Assignment Name</h5>
       <input value={assignment.title}
              className="form-control mb-2" />
+        <hr />
+      <div className="wd-flex">   
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-danger">
         Cancel
       </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
+      <button onClick={handleSave} className="btn btn-success">
         Save
       </button>
+      </div> 
     </div>
   );
 }
