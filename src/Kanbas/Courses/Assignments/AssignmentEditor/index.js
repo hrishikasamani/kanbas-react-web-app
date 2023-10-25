@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
-import "./index.css";
-
+import "./index2.css";
+import {BiDotsVerticalRounded} from "react-icons/bi";
+import {AiFillCheckCircle} from "react-icons/ai";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
@@ -17,6 +18,18 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
+
+<div className="wd-flex-row-container">
+  <div className="wd-flex">
+            <button class="btn-clear" disabled>
+              <AiFillCheckCircle/>
+                  Published
+                </button>
+            <button class="btn">
+            <BiDotsVerticalRounded/>
+            </button>
+  </div> 
+        <hr />
     <div className="assignment">
       <h5>Assignment Name</h5>
       <input value={assignment.title}
@@ -24,13 +37,14 @@ function AssignmentEditor() {
         <hr />
       <div className="wd-flex">   
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
+            className="btn">
         Cancel
       </Link>
-      <button onClick={handleSave} className="btn btn-success">
+      <button onClick={handleSave} className="btn btn-danger">
         Save
       </button>
       </div> 
+    </div>
     </div>
   );
 }
