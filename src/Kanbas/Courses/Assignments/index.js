@@ -1,5 +1,5 @@
 import React from "react";
-import AssignmentList from "./AssignmentList/AssignmentList";
+import AssignmentList from "./AssignmentList";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import {AiOutlinePlus} from "react-icons/ai"

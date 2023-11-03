@@ -1,5 +1,5 @@
 [
-    { "_id": "A101", "title": "Assignment 1 - HTML", "course": "CS4550.12631.202410" },
+    { "_id": "A101", "title": "Assignment 1 - HTML", "course": "CS4550.12631.202410", "description": "Learn how to create user interfaces with HTML", "points" :"100" },
     { "_id": "A102", "title": "Assignment 2 - CSS", "course": "CS4550.12631.202410" },
     { "_id": "A103", "title": "Assignment 3 - REACTJS", "course": "CS4550.12631.202410" },
     { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },

@@ -8,13 +8,12 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
-
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  // screen = screen.replace("%20"," ");
-  const course = db.courses.find((course) => course._id === courseId);
+  // const [empty, kanbas, courses, id, screen] = pathname.split("/");
+  // screen.replace("%20"," ");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <Breadcrumbs/>

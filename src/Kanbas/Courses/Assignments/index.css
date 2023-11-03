@@ -28,3 +28,8 @@
 .wd-flex-row-container-1 .btn-danger :hover{
     background-color: rgb(202, 5, 5);
 }
+.edit {
+    width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+}

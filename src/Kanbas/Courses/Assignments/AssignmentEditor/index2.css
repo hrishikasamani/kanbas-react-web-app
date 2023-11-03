@@ -1,5 +1,5 @@
 .assignment {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .wd-flex-row-container {
@@ -10,6 +10,22 @@
     display: flex;
     justify-content: end;
     
+}
+.wd-flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+.wd-flex1 .form-control {
+    margin: 10px;
+}
+.wd-flex1 .form-control .date {
+    margin-left: 0px;
 }
 
 .wd-flex .btn {
