@@ -1,3 +1,4 @@
+import axios from "axios";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
@@ -6,8 +7,12 @@ import {AiOutlineFileText} from "react-icons/ai";
 
 function Dashboard(
   { courses, course, setCourse, addNewCourse,
-    deleteCourse, updateCourse }
-) { 
+    deleteCourse, updateCourse })
+{ 
+  const promise = axios.get("http://localhost:4000/api/courses");
+  promise.then((response) => {
+    console.log(response);
+  })
   return (
     <div className="wd-dashboard">
       <h1>Dashboard</h1>
@@ -35,7 +40,7 @@ function Dashboard(
         Add
       </button>
 </div>
-<button className="btn btn-dark float-end" onClick={updateCourse} >
+<button className="btn btn-dark float-end" onClick={() => updateCourse(course)} >
         Update
       </button>
 </div> 
@@ -61,7 +66,7 @@ function Dashboard(
               <button className="btn btn-danger float-end" 
               onClick={(event) => {
                 event.preventDefault();
-                deleteCourse(course._id);
+                deleteCourse(course);
               }}>
               Delete
             </button>

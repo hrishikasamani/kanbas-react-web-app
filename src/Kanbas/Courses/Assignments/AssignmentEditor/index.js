@@ -5,7 +5,7 @@ import "./index2.css";
 import {BiDotsVerticalRounded} from "react-icons/bi";
 import {AiFillCheckCircle} from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
-import {
+import { addAssignment, updateAssignment,
   setAssignment,
 } from "../assignmentsReducer";
 

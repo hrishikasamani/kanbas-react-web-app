@@ -7,13 +7,23 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Courses({ courses }) {
   const { courseId } = useParams();
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
   const {pathname} = useLocation();
-  // const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  // screen.replace("%20"," ");
-  const course = courses.find((course) => course._id === courseId);
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
   return (
     <div>
       <Breadcrumbs/>

@@ -3,7 +3,7 @@ import db from "../../Database";
 
 const initialState = {
   assignments: db.assignments,
-  assignment: { name: "New Assignment", description: "New Assignment Description" },
+  assignment: { title: "New Assignment", description: "New Assignment Description", course: "CS4550.12631.202410", points :"100"},
 };
 
 

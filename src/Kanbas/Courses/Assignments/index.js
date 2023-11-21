@@ -6,23 +6,26 @@ import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineCheckCircle} from "react-icons/ai"
 import {BiDotsVerticalRounded} from "react-icons/bi"
 import "./index.css";
-
+import { addAssignment } from "./assignmentsReducer";
+import { useSelector, useDispatch } from "react-redux";
 
 function Assignments() {
-  // const { courseId } = useParams();
-  // const assignments = db.assignments;
+  const { assignmentId } = useParams();
+  const dispatch = useDispatch();
+  const assignment = db.assignments.find(
+    (assignment) => assignment._id === assignmentId);
+  const assignments = db.assignments;
   // const courseAssignments = assignments.filter(
   //   (assignment) => assignment.course === courseId);
-  return (
-  
 
+  return (
     <div className="wd-flex-grow-1">
       <input placeholder="Search for Assignment"/>
       <div className="wd-flex-row-container-1 wd-flex-grow-1">
             <button class="btn1">
               <AiOutlinePlus/>
               Group</button> 
-            <button class="btn1 btn-danger">
+            <button class="btn1 btn-danger" onClick={() => dispatch(addAssignment({ ...assignment, _id: assignmentId }))}>
               <AiOutlinePlus/>
                 Assignment
             </button>
@@ -31,22 +34,7 @@ function Assignments() {
             </button>
       </div>      
         <hr />
-     
       <AssignmentList/>
-
-    {/* <div>
-      <h3>Assignments for course {courseId}</h3>
-      <div className="list-group">
-        {courseAssignments.map((assignment) => (
-          <Link
-            key={assignment._id}
-            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-            className="list-group-item">
-            {assignment.title}
-          </Link>
-        ))}
-      </div>
-    </div> */}
     </div>
   );
 }
