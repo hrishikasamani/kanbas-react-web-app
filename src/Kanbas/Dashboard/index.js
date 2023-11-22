@@ -9,7 +9,7 @@ function Dashboard(
   { courses, course, setCourse, addNewCourse,
     deleteCourse, updateCourse })
 { 
-  const promise = axios.get("http://localhost:4000/api/courses");
+  const promise = axios.get("https://kanbas-node-server-app-hnne.onrender.com/api/courses");
   promise.then((response) => {
     console.log(response);
   })
