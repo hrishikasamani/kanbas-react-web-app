@@ -48,6 +48,7 @@ function UserTable() {
       <table className="table">
         <thead>
           <tr>
+            <th>Id</th>
             <th>Username</th>
             <th>First Name</th>
             <th>Last Name</th>
@@ -57,6 +58,9 @@ function UserTable() {
           <tr>
             <td>
               <div className="form-group row"> 
+              <div class="col-sm-5">
+              <input className="form-control" value={user._id} onChange={(e) => setUser({ ...user, _id: e.target.value })}/>
+              </div>
               <div class="col-sm-5">
               <input className="form-control" value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
               </div>
@@ -90,6 +94,7 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
+                <td>{user._id}</td>
               <td>
               <Link to={`/project/account/${user._id}`}>
                 {user.username}
