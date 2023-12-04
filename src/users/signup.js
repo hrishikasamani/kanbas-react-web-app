@@ -16,7 +16,7 @@ function Signup() {
   };
   return (
     <div className="signin">
-      <h2>Signup</h2>
+      <h2>Sign Up</h2>
       {error && <div>{error}</div>}
       <input className="form-control"
         value={credentials.username}
