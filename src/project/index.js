@@ -6,6 +6,7 @@ import Account from "../users/account";
 import UserTable from "../users/table";
 import Signup from "../users/signup";
 import Home from "../users/home";
+import Search from "../users/search";
 function Project() {
   return (
     <div className="d-flex">
@@ -21,6 +22,7 @@ function Project() {
           <Route path="/admin/users" element={<UserTable />} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/home" element={<Home/>} />
+          <Route path="/search" element={<Search/>} />
         </Routes>
       </div>
     </div>
