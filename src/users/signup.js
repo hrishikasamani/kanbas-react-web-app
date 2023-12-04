@@ -31,6 +31,10 @@ function Signup() {
       <button className="btn btn-primary w-100" onClick={signup}>
         Sign Up
       </button>
+      Already have an account?
+      <Link to={`/project/signin`}>
+        Sign In
+      </Link> now!!
     </div>
   );
 }

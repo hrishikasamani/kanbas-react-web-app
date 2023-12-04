@@ -87,9 +87,9 @@ function UserTable() {
             </td>
             <td className="text-nowrap">
             <BsFillCheckCircleFill onClick={updateUser}
-      className="me-2 text-success fs-1 text" />
+            className="me-2 text-success fs-1 text" />
               <BsPlusCircleFill onClick={createUser}
-      className="text-primary fs-1 text" />
+            className="text-success fs-1 text" />
             </td>
           </tr>
         </thead>
@@ -112,7 +112,7 @@ function UserTable() {
     <button className="btn btn-warning me-2">
       <BsPencil onClick={() => selectUser(user)} />
     </button>
-  </td>
+    </td>
             </tr>))}
         </tbody>
       </table>
