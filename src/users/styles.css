@@ -1,0 +1,25 @@
+.signin {
+    padding-top: 5px;
+}
+.signin .btn {
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.d-flex .col-2 {
+    margin: 10px;
+}
+.col-2 {
+    max-width: fit-content;
+}
+.col-10 {
+    max-width: fit-content;
+}
+.account {
+    padding-top: 5px;
+}
+.account .btn {
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 0px;
+}

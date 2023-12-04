@@ -1,0 +1,41 @@
+.assignment {
+    margin-right: 20px;
+}
+
+.wd-flex-row-container {
+    display: contents;
+}
+
+.wd-flex {
+    display: flex;
+    justify-content: end;
+    
+}
+.wd-flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+.wd-flex1 .form-control {
+    margin: 10px;
+}
+.wd-flex1 .form-control .date {
+    margin-left: 0px;
+}
+
+.wd-flex .btn {
+    border-radius: 5%;
+}
+
+.wd-flex-row-container .btn-clear {
+    margin-right: 10px;
+    font-weight: 600;
+    color: green;
+    border-color: transparent;
+    background-color: transparent;
+}
