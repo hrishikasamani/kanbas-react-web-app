@@ -57,10 +57,12 @@ function UserTable() {
           </tr>
           <tr>
             <td>
-              <div className="form-group row"> 
-              <div class="col-sm-5">
+            <div class="col-sm-5">
               <input className="form-control" value={user._id} onChange={(e) => setUser({ ...user, _id: e.target.value })}/>
               </div>
+            </td>
+            <td>
+              <div className="form-group row"> 
               <div class="col-sm-5">
               <input className="form-control" value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
               </div>
