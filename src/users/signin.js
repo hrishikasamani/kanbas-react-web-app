@@ -1,6 +1,6 @@
 import * as client from "./client";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import './styles.css';
 function Signin() {
   const [credentials, setCredentials] = useState({ username: "", password: "" });
